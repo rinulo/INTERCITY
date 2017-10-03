@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Tog til Halden</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="shortcut icon" href="favicon-16x16.png">
+        
+<style>
+         #map {
+            width: 900px;
+            height: 500px;
+            background-color: #f3f3f3;
+         }
+      </style>
+        
+    </head>
+        <body>
+                
+<!-- NAVIGASJONSMENY -->
+       <nav>
+           <ul>
+           <li style="margin-right: 50px;"><a href="index.html">Hjem</a></li>
+               <li style="margin-right: 50px;"><a href="chart.html">Chart</a></li>
+               <li style="margin-right: 50px;"><a href="maps.html">Map</a></li>
+               <li style="margin-right: 50px;"><a href="timeline.html">Timeline</a></li>
+               <li style="margin-left: 250px;"><div class="navn"> <h1 class="aldrin"><h1>InterCity 2030</h1> <h1 class="aldrin"></div></li>
+           </ul>
+               </nav>
+           
+<!-- LEGG IN KODE HER FORELØPIG! -->
+           
+           <br>    
+           <div id="map"></div>
+           <script>
+         
+
+         function createMap() {
+            
+            var city = new google.maps.LatLng(59.1198653,11.3798655);
+            var tog = new google.maps.LatLng(59.128, 11.351);
+            var map = new google.maps.Map(document.getElementById('map'), {
+               center: city,
+               zoom: 15
+            });
+
+        
+         }
+
+         
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8EddrASL0IPjHATsjYScsiKRJZIXPAj4&callback=createMap">
+    </script>
+           <!-- AIzaSyB8EddrASL0IPjHATsjYScsiKRJZIXPAj4 -->
+
+<!-- min API er: AIzaSyCzixU2T9S7t1SAu5hUyrK9qilwZaIFh8Y, men får det ikke til å funke helt.. derfor bruker jeg din -->
+
+      <br>
+        <br>
+           <br>
+           
+           
+<!-- NEDERSTE DEL -->
+           <footer>
+		        <section>@
+    <a href="mailto:eaangulo@hiof.no">Aldrin Angulo</a></section>
+	        </footer>
+   
+           
+           
+           </body>
+    </html>
+    
